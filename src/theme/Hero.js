@@ -10,9 +10,9 @@ class Hero extends Component {
         <div className="hero-content container">
           <div className="row">
             <div className="col-12 col-md-6 mb-5 pe-5">
-              <p className="display-5">Jetzt in wenigen minuten zur digitalen Speisekarte!</p>
+              <p className="display-5">Jetzt in wenigen Minuten zur digitalen Speisekarte!</p>
               <p className="h5 fw-light text-light mb-4">
-                Geben Sie Ihren Gästen die Möglichkeit, digital mit dem Smartphone zu bestellen. 
+                Geben Sie Ihren Gästen die Möglichkeit, digital mit dem Smartphone zu bestellen und zu bezahlen. 
               </p>
               <p>
                 <button className="btn btn-outline-light">Jetzt unser Video ansehen</button>
