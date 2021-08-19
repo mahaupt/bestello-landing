@@ -7,4 +7,37 @@
   background: -webkit-linear-gradient(left, #642B73 0%, #C6426E 100%);
   background: -o-linear-gradient(left, #642B73 0%, #C6426E 100%);
   background: linear-gradient(to right, #642B73 0%, #C6426E 100%);
+  position: relative;
+  z-index: 0;
+}
+
+.hero-content {
+  z-index: 0 !important;
+}
+
+.background-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../assets/wave-1.png) no-repeat left top;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+.background-dots {
+  background: url(../assets/dots-pattern-3.png) no-repeat center left;
+  overflow: visible;
+  max-height: 500px;
+}
+
+.hero-end-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: url(../assets/wave.svg) no-repeat bottom left;
+  background-size: auto;
+  z-index: -1;
 }

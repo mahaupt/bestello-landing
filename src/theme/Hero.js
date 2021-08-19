@@ -1,17 +1,29 @@
 import { Component } from 'react';
 import '../css/Hero.scss';
+import mobile from '../assets/mobile-4.png';
 
 class Hero extends Component {
   render() { 
     return ( 
       <div className="hero">
-        <div className="container">
+        <div className="background-wave"></div>
+        <div className="hero-content container">
           <div className="row">
-            <div className="col-12">
-              <span className="display-5">Jetzt in wenigen minuten zur digitalen Speisekarte!</span>
+            <div className="col-12 col-md-6 mb-5 pe-5">
+              <p className="display-5">Jetzt in wenigen minuten zur digitalen Speisekarte!</p>
+              <p className="h5 fw-light text-light mb-4">
+                Geben Sie Ihren Gästen die Möglichkeit, digital mit dem Smartphone zu bestellen. 
+              </p>
+              <p>
+                <button className="btn btn-outline-light">Jetzt unser Video ansehen</button>
+              </p>
+            </div>
+            <div className="col-12 col-md-6 background-dots">
+              <img src={mobile} />
             </div>
           </div>
         </div>
+        <div class="hero-end-shape"></div>
       </div>
      );
   }

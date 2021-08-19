@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import "../css/Navbar.scss";
 
 class Navbar extends Component {
 
@@ -13,10 +14,10 @@ class Navbar extends Component {
                 <a className="nav-link" href="#">Features</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Preise</a>
+                <a className="nav-link" href="#">Reviews</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Pricing</a>
+                <a className="nav-link" href="#">Preise</a>
               </li>
             </ul>
             <div className="flex-row ml-auto mr-70">
