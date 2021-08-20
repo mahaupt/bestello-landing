@@ -16,7 +16,7 @@ class Prices extends Component {
 
     return (
       <tr>
-        <td className="text-end pe-2">
+        <td className="text-center pe-2">
           {text}
         </td>
         <td className="text-start">
@@ -32,7 +32,7 @@ class Prices extends Component {
         <div class="flex-row justify-content-center">
 
           <div class="col-12 mb-5 card-prices">
-            <div class="card">
+            <div class="card bg-light shadow-sm">
               <div class="card-body">
                 <h3 className="text-center">Light</h3>
                 <h4 className="text-center fw-light text-muted">kostenlos</h4>
@@ -52,7 +52,7 @@ class Prices extends Component {
           </div>
 
           <div class="col-12 mb-5 card-prices">
-            <div class="card">
+            <div class="card bg-light shadow-sm">
               <div class="card-body">
                 <h3 className="text-center">Standard</h3>
                 <h4 className="text-center">109€ <span className="small text-muted fw-light">/ Monat</span></h4>
@@ -72,7 +72,7 @@ class Prices extends Component {
           </div>
 
           <div class="col-12 mb-5 card-prices">
-            <div class="card">
+            <div class="card bg-light shadow-sm">
               <div class="card-body">
                 <h3 className="text-center">Premium</h3>
                 <h4 className="text-center">229€ <span className="small text-muted fw-light">/ Monat</span></h4>
