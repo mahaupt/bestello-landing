@@ -5,7 +5,7 @@ import mobile from '../assets/mobile-4.png';
 class Hero extends Component {
   render() { 
     return ( 
-      <div className="hero">
+      <div className="hero mb-70">
         <div className="background-wave"></div>
         <div className="hero-content container">
           <div className="row">
@@ -19,11 +19,11 @@ class Hero extends Component {
               </p>
             </div>
             <div className="col-12 col-md-6 background-dots">
-              <img src={mobile} />
+              <img src={mobile} alt="IPhone Mockup" />
             </div>
           </div>
         </div>
-        <div class="hero-end-shape"></div>
+        <div className="hero-end-shape"></div>
       </div>
      );
   }
