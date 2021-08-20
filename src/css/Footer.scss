@@ -1,0 +1,25 @@
+footer {
+  border-top: 1px solid #e7eaee;
+  background-color: #f6f8f9;
+  padding-top: 1.2rem;
+  padding-bottom: 0.3rem;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline;
+      padding-right: 1.2rem;
+
+      a {
+        color: #2b2d2f;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  
+}

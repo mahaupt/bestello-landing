@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import '../css/Prices.scss';
 
 class Prices extends Component {
   tableRow(feature, enabled, text="")
@@ -28,9 +29,9 @@ class Prices extends Component {
   render() { 
     return (
       <div className="container mt-5">
-        <div class="row">
+        <div class="flex-row justify-content-center">
 
-          <div class="col-12 mb-5">
+          <div class="col-12 mb-5 card-prices">
             <div class="card">
               <div class="card-body">
                 <h3 className="text-center">Light</h3>
@@ -38,7 +39,7 @@ class Prices extends Component {
                 <table>
                   {this.tableRow("Tische", true, "5")}
                   {this.tableRow("Digitale Speisekarte", true)}
-                  {this.tableRow("Abrufe pro Tag", true, "30.000")}
+                  {this.tableRow("Abrufe pro Tag", true, "30k")}
                   {this.tableRow("Digitales Bestellen", false)}
 
                   {this.tableRow("Direktes Bezahlen", false)}
@@ -50,7 +51,7 @@ class Prices extends Component {
             </div>
           </div>
 
-          <div class="col-12 mb-5">
+          <div class="col-12 mb-5 card-prices">
             <div class="card">
               <div class="card-body">
                 <h3 className="text-center">Standard</h3>
@@ -70,7 +71,7 @@ class Prices extends Component {
             </div>
           </div>
 
-          <div class="col-12 mb-5">
+          <div class="col-12 mb-5 card-prices">
             <div class="card">
               <div class="card-body">
                 <h3 className="text-center">Premium</h3>
