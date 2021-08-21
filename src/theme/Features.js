@@ -18,11 +18,13 @@ class Features extends Component {
   render() { 
     return ( 
       <div className="container text-center">
-        <div className="row">
+        <div className="d-none d-md-block p-5"></div>
+        <div className="row" id="features">
           {this.featureElement("Feature 1", "Lorem Ipsum")}
           {this.featureElement("Feature 2", "Lorem Ipsum")}
           {this.featureElement("Feature 3", "Lorem Ipsum")}
         </div>
+        <div className="d-none d-md-block p-5"></div>
       </div>
      );
   }

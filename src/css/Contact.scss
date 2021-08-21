@@ -1,0 +1,15 @@
+.contact-container {
+  position: relative;
+}
+
+.contact-wrapper {
+  max-width: 600px;
+}
+
+.contact-container p {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}

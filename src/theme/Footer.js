@@ -7,11 +7,15 @@ class Footer extends Component {
     return ( 
       <footer>
         <div className="container">
-          <ul>
-            <li><a href="#">Impressum</a></li>
-            <li><a href="#">Datenschutzerklärung</a></li>
-            <li><a href="#">Created By Bitgladiator</a></li>
-          </ul>
+          <div className="row">
+            <div className="col-12">
+              <ul>
+                <li><a href="#legal">Impressum</a></li>
+                <li><a href="#datapolicy">Datenschutzerklärung</a></li>
+                <li><a href="#bitgladiator">Created By Bitgladiator</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </footer>
      );

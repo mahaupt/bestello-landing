@@ -4,3 +4,10 @@ $btn-border-radius-lg:        20px;
 
 @import '~bootstrap/scss/bootstrap.scss';
 @import '~bootstrap-icons/font/bootstrap-icons.css';
+
+
+.d-hidden-ease {
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}

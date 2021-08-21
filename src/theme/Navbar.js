@@ -16,24 +16,24 @@ class Navbar extends Component {
     return ( 
       <nav className={"navbar navbar-sticky navbar-expand-lg " + navBarClass}>
         <div className="container">
-          <a className="navbar-brand mr-70" href="#">Menero</a>
+          <a className="navbar-brand mr-70" href="#features">Menero</a>
           <button onClick={() => this.setState({open: !this.state.open})} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="#">Features</a>
+                <a className="nav-link" href="#features">Features</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Reviews</a>
+                <a className="nav-link" href="#reviews">Reviews</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Preise</a>
+                <a className="nav-link" href="#prices">Preise</a>
               </li>
             </ul>
             <div className="flex-row ml-auto mr-70">
-              <button className="btn btn-outline-light">Jetzt kostenlos starten!</button>
+              <a href="#contact" className="btn btn-outline-light">Jetzt kostenlos starten!</a>
             </div>
           </div>
         </div>

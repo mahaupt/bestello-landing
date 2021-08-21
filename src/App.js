@@ -6,6 +6,7 @@ import Features from './theme/Features';
 import Reviews from './theme/Reviews';
 import Prices from './theme/Prices';
 import Footer from './theme/Footer';
+import Contact from './theme/Contact';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
       <Features />
       <Reviews />
       <Prices />
+
+      <Contact />
+
       <Footer />
     </div>
   );

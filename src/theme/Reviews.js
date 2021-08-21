@@ -14,7 +14,9 @@ class Reviews extends Component {
   render() { 
     return ( 
       <div className="bg-dark text-light shadow-sm">
-        <div className="container text-center">
+        <div className="d-none d-md-block p-5"></div>
+        <div className="d-md-none p-4"></div>
+        <div className="container text-center" id="reviews">
           <div id="reviewCarousel" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner pb-5 pt-5">
               {this.carouselItem("Review 1", "This app is great", true)}
@@ -31,6 +33,8 @@ class Reviews extends Component {
             </button>
           </div>
         </div>
+        <div className="d-md-none p-4"></div>
+        <div className="d-none d-md-block p-5"></div>
       </div>
      );
   }

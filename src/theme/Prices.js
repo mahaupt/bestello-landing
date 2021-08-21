@@ -29,63 +29,72 @@ class Prices extends Component {
   render() { 
     return (
       <div className="container mt-5">
-        <div class="row justify-content-center">
+        <div className="d-none d-md-block p-5"></div>
+        <h2 className="text-center mb-5" id="prices">Preise</h2>
+        <div className="row justify-content-center">
 
-          <div class="col-md-auto mb-5 card-prices card bg-light">
-            <div class="card-body">
+          <div className="col-md-auto mb-5 card-prices card bg-light">
+            <div className="card-body">
               <h3 className="text-center">Light</h3>
               <h4 className="text-center fw-light text-muted">kostenlos</h4>
               <table>
-                {this.tableRow("Tische", true, "5")}
-                {this.tableRow("Digitale Speisekarte", true)}
-                {this.tableRow("Abrufe pro Tag", true, "30k")}
-                {this.tableRow("Digitales Bestellen", false)}
+                <tbody>
+                  {this.tableRow("Tische", true, "5")}
+                  {this.tableRow("Digitale Speisekarte", true)}
+                  {this.tableRow("Abrufe pro Tag", true, "30k")}
+                  {this.tableRow("Digitales Bestellen", false)}
 
-                {this.tableRow("Direktes Bezahlen", false)}
-                {this.tableRow("Personal Dashboard", false)}
-                {this.tableRow("Automatische Rechnungserstellung", false)}
-                {this.tableRow("Automatische Abrechnung", false)}
+                  {this.tableRow("Direktes Bezahlen", false)}
+                  {this.tableRow("Personal Dashboard", false)}
+                  {this.tableRow("Automatische Rechnungserstellung", false)}
+                  {this.tableRow("Automatische Abrechnung", false)}
+                </tbody>
               </table>
             </div>
           </div>
 
-          <div class="col-md-auto mb-5 card-prices card bg-light">
-            <div class="card-body">
+          <div className="col-md-auto mb-5 card-prices card bg-light">
+            <div className="card-body">
               <h3 className="text-center">Standard</h3>
               <h4 className="text-center">109€ <span className="small text-muted fw-light">/ Monat</span></h4>
               <table>
-                {this.tableRow("Tische", true, "50")}
-                {this.tableRow("Digitale Speisekarte", true)}
-                {this.tableRow("Abrufe pro Tag", true, "∞")}
-                {this.tableRow("Digitales Bestellen", true)}
+                <tbody>
+                  {this.tableRow("Tische", true, "50")}
+                  {this.tableRow("Digitale Speisekarte", true)}
+                  {this.tableRow("Abrufe pro Tag", true, "∞")}
+                  {this.tableRow("Digitales Bestellen", true)}
 
-                {this.tableRow("Direktes Bezahlen", false)}
-                {this.tableRow("Personal Dashboard", true)}
-                {this.tableRow("Automatische Rechnungserstellung", false)}
-                {this.tableRow("Automatische Abrechnung", false)}
+                  {this.tableRow("Direktes Bezahlen", false)}
+                  {this.tableRow("Personal Dashboard", true)}
+                  {this.tableRow("Automatische Rechnungserstellung", false)}
+                  {this.tableRow("Automatische Abrechnung", false)}
+                </tbody>
               </table>
             </div>
           </div>
 
-          <div class="col-md-auto mb-5 card-prices card bg-light">
-            <div class="card-body">
+          <div className="col-md-auto mb-5 card-prices card bg-light">
+            <div className="card-body">
               <h3 className="text-center">Premium</h3>
               <h4 className="text-center">229€ <span className="small text-muted fw-light">/ Monat</span></h4>
               <table>
-                {this.tableRow("Tische", true, "200")}
-                {this.tableRow("Digitale Speisekarte", true)}
-                {this.tableRow("Abrufe pro Tag", true, "∞")}
-                {this.tableRow("Digitales Bestellen", true)}
+                <tbody> 
+                  {this.tableRow("Tische", true, "200")}
+                  {this.tableRow("Digitale Speisekarte", true)}
+                  {this.tableRow("Abrufe pro Tag", true, "∞")}
+                  {this.tableRow("Digitales Bestellen", true)}
 
-                {this.tableRow("Direktes Bezahlen", true)}
-                {this.tableRow("Personal Dashboard", true)}
-                {this.tableRow("Automatische Rechnungserstellung", true)}
-                {this.tableRow("Automatische Abrechnung", true)}
+                  {this.tableRow("Direktes Bezahlen", true)}
+                  {this.tableRow("Personal Dashboard", true)}
+                  {this.tableRow("Automatische Rechnungserstellung", true)}
+                  {this.tableRow("Automatische Abrechnung", true)}
+                </tbody>
               </table>
             </div>
           </div>
 
         </div>
+        <div className="d-none d-md-block p-5"></div>
       </div>
      );
   }

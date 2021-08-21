@@ -31,9 +31,13 @@
   max-height: 500px;
 }
 
+.background-dots img {
+  max-width: 100%;
+}
+
 .hero-end-shape {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   right: 0;
   top: 0;
