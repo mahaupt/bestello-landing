@@ -21,7 +21,6 @@ class Reviews extends Component {
             <div className="carousel-inner pb-5 pt-5">
               {this.carouselItem("Review 1", "This app is great", true)}
               {this.carouselItem("Review 2", "Hello World")}
-              {this.carouselItem("Review 3", "Lol")}
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
               <span className="carousel-control-prev-icon" aria-hidden="true"></span>

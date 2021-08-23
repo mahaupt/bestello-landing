@@ -31,8 +31,9 @@ class Contact extends Component {
         <div className="row justify-content-center">
           <div className="col mb-5 text-center contact-wrapper">
             <h2 id="contact">Kontakt</h2>
+            <p>Diese App befindet sich noch in der Entwicklung. Kontaktieren Sie uns für eine vorzeitigen Zugang.</p>
 
-            <div class="d-block contact-container">
+            <div class="d-block contact-container mt-4">
               <form className={this.state.submit?"d-hidden-ease":""} method="get" action="#" onSubmit={this.handleSubmit}>
                 <div class="form-floating mb-2">
                   <input className="form-control" placeholder="Name" id="floatingName" type="text" name="name" value={this.state.name} onChange={this.handleChange} disabled={this.state.submit} required/>
@@ -46,7 +47,7 @@ class Contact extends Component {
                   <textarea className="form-control mb-2" placeholder="Ihre Nachricht" id="floatingText" name="text" value={this.state.text} onChange={this.handleChange} disabled={this.state.submit} style={{height: "100px"}} required/>
                   <label for="floatingText">Ihre Nachricht</label>
                 </div>
-                <button className="btn btn-primary form-control" type="submit" disabled={this.state.submit}>Absenden</button>
+                <button className="btn btn-dark form-control" type="submit" disabled={this.state.submit}>Absenden</button>
               </form>
               
               

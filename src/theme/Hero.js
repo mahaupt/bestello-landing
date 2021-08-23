@@ -14,8 +14,11 @@ class Hero extends Component {
               <p className="h5 fw-light text-light mb-4">
                 Geben Sie Ihren Gästen die Möglichkeit, digital mit dem Smartphone zu bestellen und zu bezahlen. 
               </p>
+              <p className="h5 fw-light text-light mb-4">
+                Der Einstieg in die digitale Systemgastronomie war noch nie so einfach.
+              </p>
               <p>
-                <button className="btn btn-outline-light">Jetzt unser Video ansehen</button>
+                <a href="#contact" className="btn btn-outline-light">Jetzt Kontakt aufnehmen</a>
               </p>
             </div>
             <div className="col-12 col-md-6 background-dots">

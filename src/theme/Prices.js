@@ -39,15 +39,13 @@ class Prices extends Component {
               <h4 className="text-center fw-light text-muted">kostenlos</h4>
               <table>
                 <tbody>
-                  {this.tableRow("Tische", true, "5")}
                   {this.tableRow("Digitale Speisekarte", true)}
                   {this.tableRow("Abrufe pro Tag", true, "30k")}
-                  {this.tableRow("Digitales Bestellen", false)}
+                  {this.tableRow("konfigurierbare Tische", true, "5")}
 
-                  {this.tableRow("Direktes Bezahlen", false)}
-                  {this.tableRow("Personal Dashboard", false)}
-                  {this.tableRow("Automatische Rechnungserstellung", false)}
-                  {this.tableRow("Automatische Abrechnung", false)}
+                  {this.tableRow("Dashboard fürs Personal", false)}
+                  {this.tableRow("Digitales Bestellen", false)}
+                  {this.tableRow("Digitales Bezahlen", false)}
                 </tbody>
               </table>
             </div>
@@ -59,13 +57,15 @@ class Prices extends Component {
               <h4 className="text-center">109€ <span className="small text-muted fw-light">/ Monat</span></h4>
               <table>
                 <tbody>
-                  {this.tableRow("Tische", true, "50")}
                   {this.tableRow("Digitale Speisekarte", true)}
                   {this.tableRow("Abrufe pro Tag", true, "∞")}
-                  {this.tableRow("Digitales Bestellen", true)}
+                  {this.tableRow("konfigurierbare Tische", true, "50")}
 
-                  {this.tableRow("Direktes Bezahlen", false)}
-                  {this.tableRow("Personal Dashboard", true)}
+                  {this.tableRow("Dashboard fürs Personal", true)}
+                  {this.tableRow("Digitales Bestellen", true)}
+                  {this.tableRow("Einsicht in Bestellstatus", true)}
+
+                  {this.tableRow("Digitales Bezahlen", false)}
                   {this.tableRow("Automatische Rechnungserstellung", false)}
                   {this.tableRow("Automatische Abrechnung", false)}
                 </tbody>
@@ -79,13 +79,15 @@ class Prices extends Component {
               <h4 className="text-center">229€ <span className="small text-muted fw-light">/ Monat</span></h4>
               <table>
                 <tbody> 
-                  {this.tableRow("Tische", true, "200")}
                   {this.tableRow("Digitale Speisekarte", true)}
                   {this.tableRow("Abrufe pro Tag", true, "∞")}
-                  {this.tableRow("Digitales Bestellen", true)}
+                  {this.tableRow("konfigurierbare Tische", true, "200")}
 
-                  {this.tableRow("Direktes Bezahlen", true)}
-                  {this.tableRow("Personal Dashboard", true)}
+                  {this.tableRow("Dashboard fürs Personal", true)}
+                  {this.tableRow("Digitales Bestellen", true)}
+                  {this.tableRow("Einsicht in Bestellstatus", true)}
+
+                  {this.tableRow("Digitales Bezahlen", true)}
                   {this.tableRow("Automatische Rechnungserstellung", true)}
                   {this.tableRow("Automatische Abrechnung", true)}
                 </tbody>

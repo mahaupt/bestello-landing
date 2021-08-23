@@ -33,7 +33,7 @@ class Navbar extends Component {
               </li>
             </ul>
             <div className="flex-row ml-auto mr-70">
-              <a href="#contact" className="btn btn-outline-light">Jetzt kostenlos starten!</a>
+              <a href="#contact" className="btn btn-outline-light">Jetzt Kontakt aufnehmen!</a>
             </div>
           </div>
         </div>
