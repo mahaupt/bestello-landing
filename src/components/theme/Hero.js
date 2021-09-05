@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import '../css/Hero.scss';
-import mobile from '../assets/mobile-4.png';
+import './Hero.scss';
+import mobile from '../../assets/mobile-4.png';
 
 class Hero extends Component {
   render() { 

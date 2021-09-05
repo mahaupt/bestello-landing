@@ -19,14 +19,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: url(../assets/wave-1.png) no-repeat left top;
+  background: url(../../assets/wave-1.png) no-repeat left top;
   right: 0;
   bottom: 0;
   z-index: -2;
 }
 
 .background-dots {
-  background: url(../assets/dots-pattern-3.png) no-repeat center left;
+  background: url(../../assets/dots-pattern-3.png) no-repeat center left;
   overflow: visible;
   max-height: 500px;
 }
@@ -41,7 +41,7 @@
   left: 0;
   right: 0;
   top: 0;
-  background: url(../assets/wave.svg) no-repeat bottom left;
+  background: url(../../assets/wave.svg) no-repeat bottom left;
   background-size: auto;
   z-index: -1;
 }

@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import '../css/Prices.scss';
+import './Prices.scss';
 
 class Prices extends Component {
   tableRow(feature, enabled, text="")

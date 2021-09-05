@@ -1,4 +1,4 @@
-import './css/App.scss';
+import './App.scss';
 import 'bootstrap/dist/js/bootstrap.js';
 //import LandingPage from './pages/LandingPage';
 import ProductPage from './pages/ProductPage';
