@@ -11,3 +11,12 @@ $btn-border-radius-lg:        20px;
   overflow: hidden;
   transition: all 0.3s ease;
 }
+
+.d-hidden {
+  opacity: 0;
+  overflow: hidden;
+}
+
+.ease {
+  transition: all 0.3s ease;
+}
