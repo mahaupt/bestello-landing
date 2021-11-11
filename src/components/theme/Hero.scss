@@ -12,7 +12,7 @@
 
   @media screen and (max-width: 600px) {
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-bottom: 10rem;
   }
 }
 
@@ -38,6 +38,10 @@
 
 .background-dots img {
   max-width: 100%;
+
+  @media screen and (min-width: 432px) {
+    max-width: 432px;
+  }
 }
 
 .hero-end-shape {

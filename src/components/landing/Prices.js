@@ -96,7 +96,7 @@ class Prices extends Component {
           </div>
 
         </div>
-        <div className="d-none d-md-block p-5"></div>
+        <div className="d-none d-md-block p-2"></div>
       </div>
      );
   }

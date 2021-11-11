@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { deobfuscate, obfuscate } from '../../tools/obfuscate';
+import { deobfuscate } from '../../tools/obfuscate';
 
 
 class Imprint extends Component {
