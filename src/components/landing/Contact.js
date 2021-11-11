@@ -49,7 +49,7 @@ class Contact extends Component {
         <div className="row justify-content-center">
           <div className="col mb-5 text-center contact-wrapper">
             <h2 id="contact">Kontakt</h2>
-            <p>Wir haben dein Interesse geweckt und du würdest gerne mehr erfahren? Melde dich bei uns! Wir freuen uns auf Deine Nachricht.</p>
+            <p>Wir haben Ihr Interesse geweckt und Sie würden gerne mehr erfahren? Melden Sie sich bei uns! Wir freuen uns auf Ihre Nachricht.</p>
 
             <div className="d-block contact-container mt-4">
               <form className={this.state.submit?"d-hidden ease":""} method="get" action="#" onSubmit={this.handleSubmit}>
@@ -70,11 +70,11 @@ class Contact extends Component {
               
               
               <p className={(!this.state.submit?"d-hidden ease":"") + " h6"}>
-                <i className="bi bi-check-circle text-success"></i> Danke für Deine Nachricht! Wir werden uns in kürze bei Dir melden.
+                <i className="bi bi-check-circle text-success"></i> Danke für Ihre Nachricht! Wir werden uns in kürze bei Ihnen melden.
                 <br/><br/>
                 { (this.state.error)?(
                   <div class="alert alert-danger" role="alert">
-                    Oops! Es gab einen Fehler beim Senden Deiner Nachricht. Bitte versuche es später noch einmal, oder schicke uns eine Email an <a href={"mailto:" + deobfuscate("aW5mbyU0MGJpdGdsYWRpYXRvci5kZQ==")}>{deobfuscate("aW5mbyU0MGJpdGdsYWRpYXRvci5kZQ==")}</a>
+                    Oops! Es gab einen Fehler beim Senden Ihrer Nachricht. Bitte versuchen Sie später noch einmal, oder schicken Sie uns eine Email an <a href={"mailto:" + deobfuscate("aW5mbyU0MGJpdGdsYWRpYXRvci5kZQ==")}>{deobfuscate("aW5mbyU0MGJpdGdsYWRpYXRvci5kZQ==")}</a>
                   </div>
                 ):""}
               </p>

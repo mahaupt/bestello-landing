@@ -9,6 +9,11 @@
   background: linear-gradient(to right, #642B73 0%, #C6426E 100%);
   position: relative;
   z-index: 0;
+
+  @media screen and (max-width: 600px) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .hero-content {

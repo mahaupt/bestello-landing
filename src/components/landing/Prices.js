@@ -54,7 +54,7 @@ class Prices extends Component {
           <div className="col-md-auto mb-5 card-prices card bg-light">
             <div className="card-body">
               <h3 className="text-center">Standard</h3>
-              <h4 className="text-center">109€ <span className="small text-muted fw-light">/ Monat</span></h4>
+              <h4 className="text-center">TBD€ <span className="small text-muted fw-light">/ Monat</span></h4>
               <table>
                 <tbody>
                   {this.tableRow("Digitale Speisekarte", true)}
@@ -76,7 +76,7 @@ class Prices extends Component {
           <div className="col-md-auto mb-5 card-prices card bg-light">
             <div className="card-body">
               <h3 className="text-center">Premium</h3>
-              <h4 className="text-center">229€ <span className="small text-muted fw-light">/ Monat</span></h4>
+              <h4 className="text-center">TBD€ <span className="small text-muted fw-light">/ Monat</span></h4>
               <table>
                 <tbody> 
                   {this.tableRow("Digitale Speisekarte", true)}

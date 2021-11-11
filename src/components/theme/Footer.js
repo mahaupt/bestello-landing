@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import './Footer.scss';
-
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Footer extends Component {
   render() { 
@@ -10,9 +10,9 @@ class Footer extends Component {
           <div className="row">
             <div className="col-12">
               <ul>
-                <li><a href="#legal">Impressum</a></li>
-                <li><a href="#datapolicy">Datenschutzerklärung</a></li>
-                <li><a href="https://bitgladiator.de">Created By Bitgladiator</a></li>
+                <li><Link to="/legal#top">Impressum</Link></li>
+                <li><Link to="/legal#datapolicy">Datenschutzerklärung</Link></li>
+                <li><Link to="https://bitgladiator.de">Created By Bitgladiator</Link></li>
               </ul>
             </div>
           </div>

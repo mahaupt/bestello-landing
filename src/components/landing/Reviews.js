@@ -5,7 +5,7 @@ class Reviews extends Component {
     return (
       <div className={"carousel-item" + (active?" active":"")}>
         <h3>{title}</h3>
-        <p>{text}</p>
+        <p style={{"maxWidth": "400px", "margin": "auto"}}>{text}</p>
       </div>
     );
   }
@@ -19,16 +19,16 @@ class Reviews extends Component {
         <div className="container text-center" id="reviews">
           <div id="reviewCarousel" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner pb-5 pt-5">
-              {this.carouselItem("Review 1", "This app is great", true)}
-              {this.carouselItem("Review 2", "Hello World")}
+              {this.carouselItem("Keep it simple, stupid", "Einfach Speisen hinzufügen, Tische erstellen und QR Codes bereit stellen. In wenigen Minuten haben Sie ihre eigene digitale Speisekarte in ihrem Restaurant. Der Gast kann in wenigen Klicks seine Lieblingsspeise bestellen.", true)}
+              {this.carouselItem("Mehr Zeit für richtigen Service", "Schaffen Sie Zeit für Ihre Mitarbeiter. Sie sparen sich eine Menge Zeit für die Bestellaufnahme und Rechnungserstellung und können sich so mehr dem Gast widmen.")}
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
               <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Previous</span>
+              <span className="visually-hidden">Zurück</span>
             </button>
             <button className="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
               <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Next</span>
+              <span className="visually-hidden">Weiter</span>
             </button>
           </div>
         </div>

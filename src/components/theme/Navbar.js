@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import "./Navbar.scss";
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Navbar extends Component {
   constructor(props) {
@@ -7,33 +8,37 @@ class Navbar extends Component {
     this.state = {
       open: false
     }
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState({open: !this.state.open})
   }
 
 
   render() { 
-    const navBarClass = this.state.open ? "navbar-light bg-light" : "navbar-dark";
+    const useLightScheme = (this.state.open || this.props.useLightScheme==="true");
+    const navBarClass = useLightScheme ? "navbar-light bg-light" : "navbar-dark";
 
     return ( 
       <nav className={"navbar navbar-sticky navbar-expand-lg " + navBarClass}>
         <div className="container">
-          <a className="navbar-brand mr-70" href="#features">Menero</a>
-          <button onClick={() => this.setState({open: !this.state.open})} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <Link className="navbar-brand mr-70" to="/#features">Menero</Link>
+          <button onClick={this.handleClick} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="#features">Features</a>
+                <Link className="nav-link" to="/#features">Features</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#reviews">Reviews</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#prices">Preise</a>
+                <Link className="nav-link" to="/#prices">Modell</Link>
               </li>
             </ul>
             <div className="flex-row ml-auto mr-70">
-              <a href="#contact" className="btn btn-outline-light">Jetzt Kontakt aufnehmen!</a>
+              <Link to="/#contact" className={"btn btn-outline-" + (useLightScheme?"dark":"light")}>Jetzt Kontakt aufnehmen!</Link>
             </div>
           </div>
         </div>
