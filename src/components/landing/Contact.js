@@ -45,7 +45,7 @@ class Contact extends Component {
 
     return ( 
       <div className="container mt-5 mb-5">
-        <div className="d-none d-md-block p-4"></div>
+        <div className="d-none d-md-block p-3"></div>
         <div className="row justify-content-center">
           <div className="col mb-5 text-center contact-wrapper">
             <h2 id="contact">Kontakt</h2>
