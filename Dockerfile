@@ -10,7 +10,7 @@ COPY package.json ./
 COPY yarn.lock ./
 
 RUN yarn install
-RUN yarn add serve
+RUN yarn global add serve
 
 COPY . ./
 RUN NODE_OPTIONS=--openssl-legacy-provider yarn run build
