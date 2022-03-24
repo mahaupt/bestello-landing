@@ -7,12 +7,12 @@ RUN apk add --no-cache g++ make python3 xsel
 ENV PATH /app/node_modules/.bin:$PATH
 
 COPY package.json ./
-COPY package-lock.json ./
+COPY yarn.lock ./
 
-RUN npm install
-RUN npm install -g serve
+RUN yarn install
+RUN yarn install serve
 
 COPY . ./
-RUN NODE_OPTIONS=--openssl-legacy-provider npm run build
+RUN NODE_OPTIONS=--openssl-legacy-provider yarn run build
 
 CMD ["serve", "-s", "build", "-l", "8080"]
