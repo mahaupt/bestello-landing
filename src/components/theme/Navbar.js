@@ -24,7 +24,7 @@ class Navbar extends Component {
     return ( 
       <nav className={"navbar navbar-sticky navbar-expand-lg " + navBarClass}>
         <div className="container">
-          <Link className="navbar-brand mr-70" to="/#features">Menero</Link>
+          <Link className="navbar-brand mr-70" to="/#features">Bestello</Link>
           <button onClick={this.handleClick} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
