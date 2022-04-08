@@ -22,11 +22,11 @@ class Contact extends Component {
     const payload = {
       name: this.state.name,
       email: this.state.email,
-      message: this.state.text
+      msg: this.state.text
     };
 
 
-    var promise = axios.get("https://bg-back.k3s.ehaupt.de/v1/send", {params: payload});
+    var promise = axios.post("https://api.bestello.at/relay/customer", payload);
     promise.catch(function (error) {
       console.log(error);
       this.setState({error: true});
