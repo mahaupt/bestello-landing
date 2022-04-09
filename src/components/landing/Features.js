@@ -32,7 +32,7 @@ class Features extends Component {
             {this.featureElement(faCheck, "Sonderwünsche", "Gäste können zu einzelnen Speisen Sonderwünsche angeben, wie z.B. eine spezielle Zutat oder auf eine Allergie hinweisen. Je nach Angebot kann alles individuell angepasst werden.")}
             {this.featureElement(faCheck, "Allergenkennzeichnung", "Sie können zu jeder Speise eine detaillierte Übersicht aller Allergene angeben. So haben Ihre Gäste mit Allergien immer den Überblick, ohne nachfragen zu müssen.")}
             {this.featureElement(faCheck, "Barrierefreiheit", "Seh-, Hör- und Sprechbehinderte Personen können z.B. mittels Screenreader-Funktionen selbst bestellen und sind nicht mehr auf fremde Hilfe angewiesen.")}
-            {this.featureElement(faCheck, "Secure by design", "Durch integrierte Sicherheitsfunktionen können auch nur die Personen bestellen, die sich auch wirklich in Ihrem Lokal befinden.")}
+            {this.featureElement(faCheck, "Secure by design", "Durch integrierte Sicherheitsfunktionen können nur die Personen bestellen, die sich auch wirklich in Ihrem Lokal befinden. Künstliche Intelegenz sorgt für zusätzlichen Schutz gegen unangemessene Bestellungen.")}
           </div>
         </div>
         <div className="p-5"></div>
