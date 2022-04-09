@@ -37,6 +37,7 @@ class Prices extends Component {
             <div className="card-body">
               <h3 className="text-center">Light</h3>
               <h4 className="text-center fw-light text-muted">kostenlos</h4>
+              <p className="text-center"><small>Lediglich die interaktive Speisekarte z.B. zum Einbinden auf einer Webseite</small></p>
               <table>
                 <tbody>
                   {this.tableRow("Digitale Speisekarte", true)}
@@ -53,8 +54,9 @@ class Prices extends Component {
 
           <div className="col-md-auto mb-5 card-prices card bg-light">
             <div className="card-body">
-              <h3 className="text-center">Standard</h3>
-              <h4 className="text-center">TBD€ <span className="small text-muted fw-light">/ Monat</span></h4>
+              <h3 className="text-center">Basic</h3>
+              <h4 className="text-center">99 <span className="small text-muted fw-light">/ Monat</span></h4>
+              <p className="text-center"><small>Die digitale Speisekarte mit voller Bestellfunktionalität. Integration in Ihr bestehendes Kassensystem möglich.</small></p>
               <table>
                 <tbody>
                   {this.tableRow("Digitale Speisekarte", true)}
@@ -75,8 +77,9 @@ class Prices extends Component {
 
           <div className="col-md-auto mb-5 card-prices card bg-light">
             <div className="card-body">
-              <h3 className="text-center">Premium</h3>
-              <h4 className="text-center">TBD€ <span className="small text-muted fw-light">/ Monat</span></h4>
+              <h3 className="text-center">Professional</h3>
+              <h4 className="text-center">199 <span className="small text-muted fw-light">/ Monat</span></h4>
+              <p className="text-center"><small>Das Komplettpaket mit digitaler Bezahlung und automatischer Belegerstellung</small></p>
               <table>
                 <tbody> 
                   {this.tableRow("Digitale Speisekarte", true)}

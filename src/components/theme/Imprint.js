@@ -21,7 +21,7 @@ class Imprint extends Component {
             </p>
 
             <h2>Kontakt:</h2>
-            <a href={"mailto:" + deobfuscate("bWFyY2VsJTQwYml0Z2xhZGlhdG9yLmRl")}>{deobfuscate("bWFyY2VsJTQwYml0Z2xhZGlhdG9yLmRl")}</a>
+            <a href={"mailto:" + deobfuscate("aW5mbyU0MGJlc3RlbGxvLmF0")}>{deobfuscate("aW5mbyU0MGJlc3RlbGxvLmF0")}</a>
           </div>
         </div>
       </div>

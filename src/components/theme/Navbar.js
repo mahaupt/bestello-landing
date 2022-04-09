@@ -34,11 +34,14 @@ class Navbar extends Component {
                 <Link className="nav-link" to="/#features">Features</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/#prices">Modell</Link>
+                <Link className="nav-link" to="/#prices">Preise</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/#contact">Kontakt</Link>
               </li>
             </ul>
             <div className="flex-row ml-auto mr-70">
-              <Link to="/#contact" className={"btn btn-outline-" + (useLightScheme?"dark":"light")}>Jetzt Kontakt aufnehmen!</Link>
+              <Link to="/#contact" className={"btn btn-outline-" + (useLightScheme?"dark":"light")}>Jetzt kostenlos testen!</Link>
             </div>
           </div>
         </div>

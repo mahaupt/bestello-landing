@@ -12,7 +12,6 @@ class Footer extends Component {
               <ul>
                 <li><Link to="/legal#top">Impressum</Link></li>
                 <li><Link to="/legal#datapolicy">Datenschutzerklärung</Link></li>
-                <li><a href="https://bitgladiator.de" target="_blank" rel="noreferrer">Created By Bitgladiator</a></li>
               </ul>
             </div>
           </div>

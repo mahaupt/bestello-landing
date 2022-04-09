@@ -12,13 +12,13 @@ class Hero extends Component {
             <div className="col-12 col-md-6 mb-5 pe-5">
               <p className="display-5">Jetzt in wenigen Minuten zur digitalen Speisekarte!</p>
               <p className="h5 fw-light text-light mb-4">
-                 Schluss mit dem Warten auf die Speisekarte und der langwierigen und fehleranfälligen Bestellaufnahme.
+                Schnauze voll mit langem Warten auf die Speisekarte und Bestellaufnahme?
               </p>
               <p className="h5 fw-light text-light mb-4">
                 Geben Sie Ihren Gästen die Möglichkeit, digital mit dem Smartphone zu bestellen und zu bezahlen.
               </p>
               <p>
-                <a href="#contact" className="btn btn-outline-light">Jetzt Kontakt aufnehmen</a>
+                <a href="#contact" className="btn btn-outline-light">Jetzt kostenlos testen!</a>
               </p>
             </div>
             <div className="col-12 col-md-6 background-dots">

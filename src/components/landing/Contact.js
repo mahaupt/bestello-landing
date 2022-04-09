@@ -49,7 +49,7 @@ class Contact extends Component {
         <div className="row justify-content-center">
           <div className="col mb-5 text-center contact-wrapper">
             <h2 id="contact">Kontakt</h2>
-            <p>Wir haben Ihr Interesse geweckt und Sie würden gerne mehr erfahren? Melden Sie sich bei uns! Wir freuen uns auf Ihre Nachricht.</p>
+            <p>Wir organisieren Ihnen gerne eine unverbindlich Testversion. Melden Sie sich noch heute bei uns! Wir freuen uns auf Ihre Nachricht.</p>
 
             <div className="d-block contact-container mt-4">
               <form className={this.state.submit?"d-hidden ease":""} method="get" action="#" onSubmit={this.handleSubmit}>
