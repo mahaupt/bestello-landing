@@ -1,5 +1,7 @@
 import { Component } from 'react';
 import './Prices.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleCheck, faCircle } from '@fortawesome/free-regular-svg-icons'
 
 class Prices extends Component {
   tableRow(feature, enabled, text="")
@@ -8,9 +10,9 @@ class Prices extends Component {
     {
       text = (enabled)?
       (
-        <i className='bi bi-check text-success h4'></i>
+        <FontAwesomeIcon icon={faCircleCheck} className="text-success" />
       ):(
-        <i className='bi bi-x text-danger h4'></i>
+        <FontAwesomeIcon icon={faCircle} className="text-gray-300" />
       );
     }
 
