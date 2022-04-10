@@ -24,3 +24,29 @@ $btn-border-radius-lg:        20px;
 .mt-120 {
   margin-top: 120px;
 }
+
+.text-gray-300 {
+  color: $gray-400;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.icon-stack {
+  height: 5rem;
+  width: 5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5em;
+}
+
+.icon-stack-sm {
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.3em;
+}
