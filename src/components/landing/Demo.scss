@@ -1,9 +1,19 @@
 .demo-wrapper {
   position: relative;
   min-height: 400px;
-  margin-bottom: -60px;
 }
 
 .demo-wrapper .hero-end-shape {
   z-index: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .demo-wrapper {
+    margin-bottom: -50px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .demo-wrapper {
+    margin-bottom: -100px;
+  }
 }
