@@ -12,7 +12,7 @@ class Features extends Component {
           </div>
           <div className="ms-4 text-start">
             <h5>{header}</h5>
-            <p className="text-white-50">{text}</p>
+            <p className="text-white-50 fw-light text-justify">{text}</p>
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@ class Features extends Component {
 
   render() { 
     return ( 
-      <div className="bg-dark text-light shadow-sm text-center">
+      <div className="bg-dark text-light text-center">
         <div className="p-5"></div>
         <h2>Features</h2>
         <div className="container px-5" style={{maxWidth: "1000px"}}>
