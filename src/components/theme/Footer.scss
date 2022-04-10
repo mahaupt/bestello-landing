@@ -4,6 +4,7 @@ footer {
   padding-top: 1.2rem;
   padding-bottom: 0.3rem;
   overflow: hidden;
+  flex-shrink: 0;
 
   ul {
     list-style: none;

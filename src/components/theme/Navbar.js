@@ -44,7 +44,7 @@ class Navbar extends Component {
               </li>
             </ul>
             <div className="flex-row ml-auto mr-70">
-              <Link to="/#contact" className={"btn btn-outline-" + (useLightScheme?"dark":"light")}>Jetzt kostenlos testen!</Link>
+              <Link to="/signup" className={"btn btn-outline-" + (useLightScheme?"dark":"light")}>Jetzt kostenlos testen!</Link>
             </div>
           </div>
         </div>

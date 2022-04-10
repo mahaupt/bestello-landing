@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Features extends Component {
   featureElement(icon, header, text) {
@@ -34,6 +35,7 @@ class Features extends Component {
             {this.featureElement(faCheck, "Barrierefreiheit", "Seh-, Hör- und Sprechbehinderte Personen können z.B. mittels Screenreader-Funktionen selbst bestellen und sind nicht mehr auf fremde Hilfe angewiesen.")}
             {this.featureElement(faCheck, "Secure by design", "Durch integrierte Sicherheitsfunktionen können nur die Personen bestellen, die sich auch wirklich in Ihrem Lokal befinden. Künstliche Intelegenz sorgt für zusätzlichen Schutz gegen unangemessene Bestellungen.")}
           </div>
+          <p><Link to="/signup" className="btn btn-outline-light">Jetzt kostenlos anmelden!</Link></p>
         </div>
         <div className="p-5"></div>
       </div>

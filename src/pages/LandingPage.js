@@ -9,6 +9,7 @@ import Prices from '../components/landing/Prices';
 import Footer from '../components/theme/Footer';
 import Contact from '../components/landing/Contact';
 import Partner from '../components/landing/Partner';
+import Wrapup from '../components/landing/Wrapup';
 
 class LandingPage extends Component {
   render() { 
@@ -20,7 +21,8 @@ class LandingPage extends Component {
         <Features />
         <Demo />
         <Prices />
-
+        <Wrapup />
+        
         <Contact />
         <Partner />
         <Footer />

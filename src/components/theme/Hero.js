@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import './Hero.scss';
 import mobile from '../../assets/mobile-4.png';
 
@@ -18,7 +19,7 @@ class Hero extends Component {
                 Geben Sie Ihren Gästen die Möglichkeit, digital mit dem Smartphone zu bestellen und zu bezahlen.
               </p>
               <p>
-                <a href="#contact" className="btn btn-outline-light">Jetzt kostenlos testen!</a>
+                <Link to="/signup" className="btn btn-outline-light">Jetzt kostenlos testen!</Link>
               </p>
             </div>
             <div className="col-12 col-md-6 background-dots">

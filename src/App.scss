@@ -6,6 +6,12 @@ $btn-border-radius-lg:        20px;
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 
 
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .d-hidden-ease {
   opacity: 0;
   overflow: hidden;
