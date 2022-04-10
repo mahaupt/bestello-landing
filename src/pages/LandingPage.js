@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { useMatomo } from '@datapunt/matomo-tracker-react';
 
 import Navbar from '../components/theme/Navbar';
 import Hero from '../components/theme/Hero';
@@ -11,24 +12,27 @@ import Contact from '../components/landing/Contact';
 import Partner from '../components/landing/Partner';
 import Wrapup from '../components/landing/Wrapup';
 
-class LandingPage extends Component {
-  render() { 
-    return ( 
-      <>
-        <Navbar />
-        <Hero />
-        <Bulletpoints />
-        <Features />
-        <Demo />
-        <Prices />
-        <Wrapup />
-        
-        <Contact />
-        <Partner />
-        <Footer />
-      </>
-     );
-  }
+export default function LandingPage(props) {
+  const { trackPageView } = useMatomo();
+  // Track page view
+  React.useEffect(() => {
+    trackPageView();
+    // eslint-disable-next-line
+  }, []);
+
+  return ( 
+    <>
+      <Navbar />
+      <Hero />
+      <Bulletpoints />
+      <Features />
+      <Demo />
+      <Prices />
+      <Wrapup />
+      
+      <Contact />
+      <Partner />
+      <Footer />
+    </>
+    );
 }
- 
-export default LandingPage;

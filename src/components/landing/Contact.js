@@ -1,89 +1,76 @@
-
-   
-import React, { Component } from 'react';
+import React from 'react';
+import { useMatomo } from '@datapunt/matomo-tracker-react';
 import './Contact.scss';
 import axios from 'axios';
 import { deobfuscate } from '../../tools/obfuscate';
 
-class Contact extends Component {
-  
+export default function Contact(props) {
+  const { trackEvent } = useMatomo();
 
-  constructor(props) {
-    super(props);
-    this.state = { name: "", email: "", text: "", submit: false, error: false }
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+  const [name, setName] = React.useState('');
+  const [email, setEmail] = React.useState('');
+  const [msg, setMsg] = React.useState('');
+  const [isSubmitted, setIsSubmitted] = React.useState(false);
+  const [isError, setIsError] = React.useState(false);
 
-  handleSubmit(event) {
+  const handleSubmit = function(event) {
     event.preventDefault();
-    console.log(this.state.name, this.state.email, this.state.text);
+    trackEvent({ category: 'Landing', action: 'submit', name: 'form-contact' });
 
     const payload = {
-      name: this.state.name,
-      email: this.state.email,
-      msg: this.state.text
+      name: name,
+      email: email,
+      msg: msg
     };
-
 
     var promise = axios.post("https://api.bestello.at/relay/customer", payload);
     promise.catch(function (error) {
       console.log(error);
-      this.setState({error: true});
+      setIsError(true);
     });
 
-    this.setState({submit: true});
-  }
+    setIsSubmitted(true);
+  };
 
-  handleChange(event) {
-    var stateChange = {};
-    stateChange[event.target.name] = event.target.value;
-    this.setState(stateChange);
-  }
+  return ( 
+    <div className="container mt-5 mb-5">
+      <div className="d-none d-md-block p-3"></div>
+      <div className="row justify-content-center">
+        <div className="col mb-5 text-center contact-wrapper">
+          <h2 id="contact">Kontakt</h2>
+          <p>Wir organisieren Ihnen gerne eine unverbindlich Testversion. Melden Sie sich noch heute bei uns! Wir freuen uns auf Ihre Nachricht.</p>
 
-  render() { 
-
-    return ( 
-      <div className="container mt-5 mb-5">
-        <div className="d-none d-md-block p-3"></div>
-        <div className="row justify-content-center">
-          <div className="col mb-5 text-center contact-wrapper">
-            <h2 id="contact">Kontakt</h2>
-            <p>Wir organisieren Ihnen gerne eine unverbindlich Testversion. Melden Sie sich noch heute bei uns! Wir freuen uns auf Ihre Nachricht.</p>
-
-            <div className="d-block contact-container mt-4">
-              <form className={this.state.submit?"d-hidden ease":""} method="get" action="#" onSubmit={this.handleSubmit}>
-                <div className="form-floating mb-2">
-                  <input className="form-control" placeholder="Name" id="floatingName" type="text" name="name" value={this.state.name} onChange={this.handleChange} disabled={this.state.submit} required/>
-                  <label htmlFor="floatingName">Name</label>
+          <div className="d-block contact-container mt-4">
+            <form className={isSubmitted?"d-hidden ease":""} method="get" action="#" onSubmit={handleSubmit}>
+              <div className="form-floating mb-2">
+                <input className="form-control" placeholder="Name" id="floatingName" type="text" name="name" value={name} onChange={e => setName(e.target.value)} disabled={isSubmitted} required/>
+                <label htmlFor="floatingName">Name</label>
+              </div>
+              <div className="form-floating mb-2">
+                <input className="form-control mb-2" placeholder="Email" id="floatingEmail" type="email" name="email" value={email} onChange={e => setEmail(e.target.value)} disabled={isSubmitted} required/>
+                <label htmlFor="floatingEmail">Email</label>
+              </div>
+              <div className="form-floating mb-2">
+                <textarea className="form-control mb-2" placeholder="Ihre Nachricht" id="floatingText" name="text" value={msg} onChange={e => setMsg(e.target.value)} disabled={isSubmitted} style={{height: "100px"}} required/>
+                <label htmlFor="floatingText">Ihre Nachricht</label>
+              </div>
+              <button className="btn btn-dark form-control" type="submit" disabled={isSubmitted}>Absenden</button>
+            </form>
+            
+            
+            <p className={(!isSubmitted?"d-hidden ease":"") + " h6"}>
+              <i className="bi bi-check-circle text-success"></i> Danke für Ihre Nachricht! Wir werden uns in kürze bei Ihnen melden.
+              <br/><br/>
+              { (isError)?(
+                <div class="alert alert-danger" role="alert">
+                  Oops! Es gab einen Fehler beim Senden Ihrer Nachricht. Bitte versuchen Sie später noch einmal, oder schicken Sie uns eine Email an <a href={"mailto:" + deobfuscate("aW5mbyU0MGJpdGdsYWRpYXRvci5kZQ==")}>{deobfuscate("aW5mbyU0MGJpdGdsYWRpYXRvci5kZQ==")}</a>
                 </div>
-                <div className="form-floating mb-2">
-                  <input className="form-control mb-2" placeholder="Email" id="floatingEmail" type="email" name="email" value={this.state.email} onChange={this.handleChange} disabled={this.state.submit} required/>
-                  <label htmlFor="floatingEmail">Email</label>
-                </div>
-                <div className="form-floating mb-2">
-                  <textarea className="form-control mb-2" placeholder="Ihre Nachricht" id="floatingText" name="text" value={this.state.text} onChange={this.handleChange} disabled={this.state.submit} style={{height: "100px"}} required/>
-                  <label htmlFor="floatingText">Ihre Nachricht</label>
-                </div>
-                <button className="btn btn-dark form-control" type="submit" disabled={this.state.submit}>Absenden</button>
-              </form>
-              
-              
-              <p className={(!this.state.submit?"d-hidden ease":"") + " h6"}>
-                <i className="bi bi-check-circle text-success"></i> Danke für Ihre Nachricht! Wir werden uns in kürze bei Ihnen melden.
-                <br/><br/>
-                { (this.state.error)?(
-                  <div class="alert alert-danger" role="alert">
-                    Oops! Es gab einen Fehler beim Senden Ihrer Nachricht. Bitte versuchen Sie später noch einmal, oder schicken Sie uns eine Email an <a href={"mailto:" + deobfuscate("aW5mbyU0MGJpdGdsYWRpYXRvci5kZQ==")}>{deobfuscate("aW5mbyU0MGJpdGdsYWRpYXRvci5kZQ==")}</a>
-                  </div>
-                ):""}
-              </p>
-            </div>
+              ):""}
+            </p>
           </div>
         </div>
       </div>
-     );
-  }
+    </div>
+    );
 }
  
-export default Contact;
