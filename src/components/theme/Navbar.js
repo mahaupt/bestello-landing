@@ -3,23 +3,19 @@ import { useMatomo } from '@datapunt/matomo-tracker-react';
 import "./Navbar.scss";
 import { HashLink as Link } from 'react-router-hash-link';
 
+
 export default function Navbar(props) {
   const { trackEvent } = useMatomo();
   const [ isOpen, setIsOpen ] = React.useState(false);
-
+  
   const useLightScheme = (isOpen || props.useLightScheme==="true");
   const navBarClass = useLightScheme ? "navbar-light bg-light" : "navbar-dark";
-
-  const handleClick = function() {
-    setIsOpen(!isOpen);
-  }
-  
 
   return ( 
     <nav className={"navbar navbar-sticky navbar-expand-lg " + navBarClass}>
       <div className="container">
         <Link className="navbar-brand mr-70" to="/#features">Bestello</Link>
-        <button onClick={handleClick} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button onClick={() => setIsOpen(!isOpen)} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
@@ -38,7 +34,7 @@ export default function Navbar(props) {
             </li>
           </ul>
           <div className="flex-row ml-auto mr-70">
-            <Link to="/signup" onClick={() => trackEvent({ category: 'Landing', action: 'click', name: 'cta-header' })} className={"btn btn-outline-" + (useLightScheme?"dark":"light")}>Jetzt kostenlos testen!</Link>
+            <Link to="/signup" onClick={() => trackEvent({ category: 'Landing', action: 'click', name: 'cta-header' })} className={"btn btn-" + (useLightScheme?"dark":"light")}>Jetzt kostenlos testen!</Link>
           </div>
         </div>
       </div>

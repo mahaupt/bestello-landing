@@ -21,7 +21,7 @@ export default function Features(props) {
           {featureElement(faCheck, "Barrierefreiheit", "Seh-, Hör- und Sprechbehinderte Personen können z.B. mittels Screenreader-Funktionen selbst bestellen und sind nicht mehr auf fremde Hilfe angewiesen.")}
           {featureElement(faCheck, "Secure by design", "Durch integrierte Sicherheitsfunktionen können nur die Personen bestellen, die sich auch wirklich in Ihrem Lokal befinden. Künstliche Intelegenz sorgt für zusätzlichen Schutz gegen unangemessene Bestellungen.")}
         </div>
-        <p><Link to="/signup" onClick={() => trackEvent({ category: 'Landing', action: 'click', name: 'cta-features' })} className="btn btn-outline-light">Jetzt kostenlos anmelden!</Link></p>
+        <p><Link to="/signup" onClick={() => trackEvent({ category: 'Landing', action: 'click', name: 'cta-features' })} className="btn btn-light">Jetzt kostenlos anmelden!</Link></p>
       </div>
       <div className="p-5"></div>
     </div>

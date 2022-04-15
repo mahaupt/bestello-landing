@@ -21,7 +21,7 @@ export default function Hero(props) {
               Geben Sie Ihren Gästen die Möglichkeit, digital mit dem Smartphone zu bestellen und zu bezahlen.
             </p>
             <p>
-              <Link to="/signup" onClick={() => trackEvent({ category: 'Landing', action: 'click', name: 'cta-hero' })} className="btn btn-outline-light">Jetzt kostenlos testen!</Link>
+              <Link to="/signup" onClick={() => trackEvent({ category: 'Landing', action: 'click', name: 'cta-hero' })} className="btn btn-light">Jetzt kostenlos testen!</Link>
             </p>
           </div>
           <div className="col-12 col-md-6 background-dots">
