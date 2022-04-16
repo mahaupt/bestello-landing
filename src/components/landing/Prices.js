@@ -12,7 +12,7 @@ class Prices extends Component {
       (
         <FontAwesomeIcon icon={faCircleCheck} className="text-success" />
       ):(
-        <FontAwesomeIcon icon={faCircle} className="text-gray-300" />
+        <FontAwesomeIcon icon={faCircle} className="text-gray-400" />
       );
     }
 
@@ -101,6 +101,7 @@ class Prices extends Component {
           </div>
 
         </div>
+        <p className="small fw-light text-gray-500 text-center">Alle Preisangaben in Euro. Preise ohne MwSt. gemäß Kleinunternehmerregelung.</p>
         <div className="d-none d-md-block p-2"></div>
       </div>
      );
