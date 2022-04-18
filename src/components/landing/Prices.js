@@ -101,7 +101,7 @@ class Prices extends Component {
           </div>
 
         </div>
-        <p className="small fw-light text-gray-500 text-center">Alle Preisangaben in Euro. Preise ohne MwSt. gemäß Kleinunternehmerregelung.</p>
+        <p className="small fw-light text-gray-500 text-center">Alle Preisangaben in Euro und inklusive 19% MwSt.</p>
         <div className="d-none d-md-block p-2"></div>
       </div>
      );
