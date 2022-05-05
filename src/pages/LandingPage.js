@@ -22,6 +22,7 @@ export default function LandingPage(props) {
 
   return ( 
     <>
+      <link rel="canonical" href="https://bestello.at" />
       <Navbar />
       <Hero />
       <Bulletpoints />
