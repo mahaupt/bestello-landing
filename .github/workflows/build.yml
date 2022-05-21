@@ -31,7 +31,7 @@ jobs:
   image:
     needs: [ tag ]
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/dev'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/hotel'
     steps:
     - uses: actions/checkout@v2
     - name: Set image name
@@ -131,3 +131,21 @@ jobs:
             cd /home/marcel/bestello-dev
             docker-compose pull bestello
             docker-compose up -d bestello
+
+  deploy-hotel:
+    needs: [ image ]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/hotel'
+    steps:
+      - name: Deploy
+        uses: cross-the-world/ssh-scp-ssh-pipelines@latest
+        with:
+          host: ${{ secrets.DC_HOST }}
+          user: ${{ secrets.DC_USER }}
+          key:  ${{ secrets.DC_KEY }}
+          port: ${{ secrets.DC_PORT }}
+          connect_timeout: 10s
+          first_ssh: |
+            cd /home/marcel/bestello
+            docker-compose pull bestello-hotel
+            docker-compose up -d bestello-hotel

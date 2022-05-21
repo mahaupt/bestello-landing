@@ -25,7 +25,7 @@ class Bulletpoints extends Component {
       <div className="container text-center">
         <div className="d-none d-md-block p-5"></div>
         <div className="row" id="features">
-          {this.bulletElement(faMobileScreen, "Digitale Bestellung und Bezahlung", "Ihr Gast setzt sich an Ihren Tisch, scannt einen QR Code ein, hat sofort Zugriff auf die Speisekarte, kann digital bestellen und auf wunsch sogar direkt bezahlen.")}
+          {this.bulletElement(faMobileScreen, "Digitale Bestellung und Bezahlung", "Ihr Gast scannt einfach einen QR Code, hat sofort Zugriff auf die Speisekarte, kann digital bestellen und auf wunsch sogar direkt bezahlen.")}
           {this.bulletElement(faEye, "Behalten Sie den Überblick", "Mit dem Personaldashboard behalten Sie immer den Überblick über aktuelle Bestellungen und Status. Optional kann Ihr Gast genau verfolgen, wie weit die Bestellung bereits fertig ist und für SB Bereiche: ob er sie abholen kann.")}
           {this.bulletElement(faRobot, "Automatisierte Rechnungserstellung", "Die Zettelwirtschaft bekommt ein Upgrade: Auf Wunsch kann Ihr Gast die Rechnungen direkt herunterladen, oder sich per Email weiterleiten.")}
         </div>

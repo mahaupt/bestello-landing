@@ -16,9 +16,9 @@ export default function Hero(props) {
       <div className="hero-content container">
         <div className="row">
           <div className="col-12 col-md-6 mb-5 pe-5">
-            <p className="display-5">Jetzt in wenigen Minuten zur digitalen Speisekarte!</p>
+            <p className="display-5">Jetzt in wenigen Minuten zum digitalen Room-Service</p>
             <p className="h5 fw-light text-light mb-4">
-              Bestello ist dein digitaler Service-Mitarbeiter - Schneller und effizienter Gäste bedienen - Mehr Zeit für besseren Service.
+              Bestello ist dein digitaler Room-Service – Schneller und effizienter deine Hotelgäste auf dem Zimmer bedienen. – Mehr Zeit für besseren Service
             </p>
             <p className="h5 fw-light text-light mb-4">
               Geben Sie Ihren Gästen die Möglichkeit, digital mit dem Smartphone zu bestellen und zu bezahlen.

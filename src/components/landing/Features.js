@@ -19,7 +19,7 @@ export default function Features(props) {
           {featureElement(faCheck, "Sonderwünsche", "Gäste können zu einzelnen Speisen Sonderwünsche angeben, wie z.B. eine spezielle Zutat oder auf eine Allergie hinweisen. Je nach Angebot kann alles individuell angepasst werden.")}
           {featureElement(faCheck, "Allergenkennzeichnung", "Sie können zu jeder Speise eine detaillierte Übersicht aller Allergene angeben. So haben Ihre Gäste mit Allergien immer den Überblick, ohne nachfragen zu müssen.")}
           {featureElement(faCheck, "Barrierefreiheit", "Seh-, Hör- und Sprechbehinderte Personen können z.B. mittels Screenreader-Funktionen selbst bestellen und sind nicht mehr auf fremde Hilfe angewiesen.")}
-          {featureElement(faCheck, "Secure by design", "Durch integrierte Sicherheitsfunktionen können nur die Personen bestellen, die sich auch wirklich in Ihrem Lokal befinden. Künstliche Intelegenz sorgt für zusätzlichen Schutz gegen unangemessene Bestellungen.")}
+          {featureElement(faCheck, "Secure by design", "Durch integrierte Sicherheitsfunktionen können nur die Personen bestellen, die sich auch wirklich in Ihrem Hotel befinden. Künstliche Intelegenz sorgt für zusätzlichen Schutz gegen unangemessene Bestellungen.")}
         </div>
         <p><Link to="/signup" onClick={() => trackEvent({ category: 'Landing', action: 'click', name: 'cta-features' })} className="btn btn-light">Jetzt kostenlos anmelden!</Link></p>
       </div>
