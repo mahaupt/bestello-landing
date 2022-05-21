@@ -22,7 +22,7 @@ jobs:
         
       - name: Create a new release
         uses: ncipollo/release-action@v1
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         with:
           tag: ${{ steps.autotag.outputs.new-tag }}
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -31,7 +31,7 @@ jobs:
   image:
     needs: [ tag ]
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/dev'
     steps:
     - uses: actions/checkout@v2
     - name: Set image name
@@ -51,8 +51,7 @@ jobs:
           type=ref,event=pr
           type=ref,event=tag
           type=sha
-        flavor: |
-          latest=true
+
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v1
 
@@ -97,9 +96,10 @@ jobs:
         rm -rf /tmp/.buildx-cache
         mv /tmp/.buildx-cache-new /tmp/.buildx-cache
 
-  deploy:
+  deploy-main:
     needs: [ image ]
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Deploy
         uses: cross-the-world/ssh-scp-ssh-pipelines@latest
@@ -110,6 +110,24 @@ jobs:
           port: ${{ secrets.DC_PORT }}
           connect_timeout: 10s
           first_ssh: |
-            cd /home/marcel/menero
-            docker-compose pull
-            docker-compose up -d
+            cd /home/marcel/bestello
+            docker-compose pull bestello
+            docker-compose up -d bestello
+
+  deploy-dev:
+    needs: [ image ]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/dev'
+    steps:
+      - name: Deploy
+        uses: cross-the-world/ssh-scp-ssh-pipelines@latest
+        with:
+          host: ${{ secrets.DC_HOST }}
+          user: ${{ secrets.DC_USER }}
+          key:  ${{ secrets.DC_KEY }}
+          port: ${{ secrets.DC_PORT }}
+          connect_timeout: 10s
+          first_ssh: |
+            cd /home/marcel/bestello-dev
+            docker-compose pull bestello
+            docker-compose up -d bestello
