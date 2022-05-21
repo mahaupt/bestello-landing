@@ -20,7 +20,7 @@ export default function Contact(props) {
     const payload = {
       name: name,
       email: email,
-      msg: msg
+      msg: "Contact: \n" + msg
     };
 
     var promise = axios.post("https://api.bestello.at/relay/customer", payload);
