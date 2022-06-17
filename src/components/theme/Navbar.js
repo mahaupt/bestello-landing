@@ -2,6 +2,8 @@ import React from 'react';
 import { useMatomo } from '@datapunt/matomo-tracker-react';
 import "./Navbar.scss";
 import { HashLink as Link } from 'react-router-hash-link';
+import bestello from '../../assets/bestello.png';
+import bestelloWhite from '../../assets/bestello_white.png';
 
 
 export default function Navbar(props) {
@@ -14,7 +16,9 @@ export default function Navbar(props) {
   return ( 
     <nav className={"navbar navbar-sticky navbar-expand-lg " + navBarClass}>
       <div className="container">
-        <Link className="navbar-brand mr-70" to="/#features">Bestello</Link>
+        <Link className="navbar-brand mr-70" to="/#features">
+          <img src={isOpen?bestello:bestelloWhite} alt="Bestello" height="40" />
+        </Link>
         <button onClick={() => setIsOpen(!isOpen)} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
