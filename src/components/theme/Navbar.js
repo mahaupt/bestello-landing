@@ -17,7 +17,7 @@ export default function Navbar(props) {
     <nav className={"navbar navbar-sticky navbar-expand-lg " + navBarClass}>
       <div className="container">
         <Link className="navbar-brand mr-70" to="/#features">
-          <img src={isOpen?bestello:bestelloWhite} alt="Bestello" height="40" />
+          <img src={useLightScheme?bestello:bestelloWhite} alt="Bestello" height="40" />
         </Link>
         <button onClick={() => setIsOpen(!isOpen)} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
