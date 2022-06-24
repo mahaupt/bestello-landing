@@ -6,7 +6,7 @@ import '../theme/Hero.scss';
 
 export default function Demo(props) {
   const { trackEvent } = useMatomo();
-  const testLink = "https://app.bestello.at/?t=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiZ3Vlc3QiLCJ1c2VyX2lkIjoiIiwicmVzdGF1cmFudF9pZCI6IjYxOTY5NjFiMmE1ZTUwMjc0NmRjOTY1MyIsInRhYmxlX2lkIjoiMDAwMDAwIiwiZXhwaXJlc19hdCI6Ijk5OTktMDEtMDFUMTI6MDA6MDAuMDBaIn0.qdoaYY9cJPiiMNwh7qwRfzmfb9_HnnllRGn0Uq4bv_c0OnD4BzyaRePtsAxCQKhYGDNPY1r7gUFeCFd4ovNhPw";
+  const testLink = "https://bit.ly/bestello";
   return (
     <div className="bg-dark text-light text-center demo-wrapper">
       <div className="hero-end-shape"></div>

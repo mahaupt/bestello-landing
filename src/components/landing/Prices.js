@@ -43,7 +43,7 @@ class Prices extends Component {
               <table>
                 <tbody>
                   {this.tableRow("Digitale Speisekarte", true)}
-                  {this.tableRow("Abrufe pro Tag", true, "30k")}
+                  {this.tableRow("Individuelles Design", true)}
                   {this.tableRow("konfigurierbare Tische", true, "5")}
 
                   {this.tableRow("Dashboard fürs Personal", false)}
@@ -58,16 +58,18 @@ class Prices extends Component {
             <div className="card-body">
               <h3 className="text-center">Basic</h3>
               <h4 className="text-center">99 <span className="small text-muted fw-light">/ Monat</span></h4>
-              <p className="text-center"><small>Die digitale Speisekarte mit voller Bestellfunktionalität. Integration in Ihr bestehendes Kassensystem möglich.</small></p>
+              <p className="text-center"><small>Die digitale Speisekarte mit voller Bestellfunktionalität.</small></p>
               <table>
                 <tbody>
                   {this.tableRow("Digitale Speisekarte", true)}
-                  {this.tableRow("Abrufe pro Tag", true, "∞")}
+                  {this.tableRow("Individuelles Design", true)}
                   {this.tableRow("konfigurierbare Tische", true, "50")}
 
                   {this.tableRow("Dashboard fürs Personal", true)}
                   {this.tableRow("Digitales Bestellen", true)}
                   {this.tableRow("Einsicht in Bestellstatus", true)}
+
+                  {this.tableRow("Integration in bestehendes Kassensystem", true)}
 
                   {this.tableRow("Digitales Bezahlen", false)}
                   {this.tableRow("Automatische Rechnungserstellung", false)}
@@ -85,12 +87,14 @@ class Prices extends Component {
               <table>
                 <tbody> 
                   {this.tableRow("Digitale Speisekarte", true)}
-                  {this.tableRow("Abrufe pro Tag", true, "∞")}
+                  {this.tableRow("Individuelles Design", true)}
                   {this.tableRow("konfigurierbare Tische", true, "200")}
 
                   {this.tableRow("Dashboard fürs Personal", true)}
                   {this.tableRow("Digitales Bestellen", true)}
                   {this.tableRow("Einsicht in Bestellstatus", true)}
+
+                  {this.tableRow("Integration in bestehendes Kassensystem", true)}
 
                   {this.tableRow("Digitales Bezahlen", true)}
                   {this.tableRow("Automatische Rechnungserstellung", true)}
