@@ -5,8 +5,6 @@ import { deobfuscate } from '../../tools/obfuscate';
 class Imprint extends Component {
   state = {  }
 
-
-
   render() { 
     return ( 
       <div className="container mt-120" id="imprint">
@@ -21,7 +19,8 @@ class Imprint extends Component {
             </p>
 
             <h2>Kontakt:</h2>
-            <a href={"mailto:" + deobfuscate("aW5mbyU0MGJlc3RlbGxvLmF0")}>{deobfuscate("aW5mbyU0MGJlc3RlbGxvLmF0")}</a>
+            <p><a href={"mailto:" + deobfuscate("aW5mbyU0MGJlc3RlbGxvLmF0")}>{deobfuscate("aW5mbyU0MGJlc3RlbGxvLmF0")}</a></p>
+            <p>{deobfuscate('JTJCNDMlMjA3MjAlMjAwODA0NDI=')}</p>
           </div>
         </div>
       </div>
