@@ -28,7 +28,7 @@ export default function LandingPage(props) {
       <Bulletpoints />
       <Features />
       <Demo />
-      <Prices />
+      {/*<Prices />*/}
       <Wrapup />
       
       <Contact />
