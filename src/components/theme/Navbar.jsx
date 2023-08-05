@@ -30,9 +30,9 @@ export default function Navbar(props) {
             <li className="nav-item active">
               <Link className="nav-link" to="/#demo">Demo</Link>
             </li>
-            <li className="nav-item">
+            {/*<li className="nav-item">
               <Link className="nav-link" to="/#prices">Preise</Link>
-            </li>
+            </li>*/}
             <li className="nav-item">
               <Link className="nav-link" to="/#contact">Kontakt</Link>
             </li>

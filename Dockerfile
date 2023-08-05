@@ -13,6 +13,6 @@ RUN yarn install
 RUN yarn global add serve
 
 COPY . ./
-RUN NODE_OPTIONS=--openssl-legacy-provider yarn run build
+RUN yarn run build
 
-CMD ["serve", "-s", "build", "-l", "8080"]
+CMD ["serve", "-s", "dist", "-l", "8080"]
