@@ -1,3 +1,5 @@
+import { Buffer } from 'buffer';
+
 export function deobfuscate(s) {
   return decodeURIComponent(Buffer.from(s, 'base64'));
 }
